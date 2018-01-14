@@ -11,20 +11,18 @@ const Restaurants = ({ match }) => {
       <h2>Restaurants</h2>
       <ul>
         <li>
-          <Link to={`${match.url}/punta-playa`}>Punta Playa</Link>
+          <Link to="/r/punta-playa">Punta Playa</Link>
         </li>
         <li>
-          <Link to={`${match.url}/rastacabana`}>Rastacabana</Link>
+          <Link to="/r/rastacabana">Rastacabana</Link>
         </li>
         <li>
-          <Link to={`${match.url}/madera`}>Madera</Link>
+          <Link to="/r/madera">Madera</Link>
         </li>
         <li>
-          <Link to={`${match.url}/brazilia`}>Brazilia</Link>
+          <Link to="/r/brazilia">Brazilia</Link>
         </li>
       </ul>
-      
-      <Route path={`${match.url}/:restaurantId`} component={Restaurant}/>
     </div>
   )
 }

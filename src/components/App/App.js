@@ -8,10 +8,11 @@ import {
   IndexRoute
 } from 'react-router-dom'
 
-import Home from 'components/Home/Home'
-import About from 'components/About/About'
-import Restaurants from 'components/Restaurants/Restaurants'
-import Connect from 'components/Connect/Connect';
+import Home from '../Home/Home'
+import About from '../About/About'
+import Restaurants from '../Restaurants/Restaurants'
+import Connect from '../Connect/Connect'
+import Restaurant from '../Restaurant/Restaurant'
 
 const TaulaApp = () => (
   <Router>
@@ -29,6 +30,7 @@ const TaulaApp = () => (
       <Route path="/connect" component={Connect}/>
       <Route path="/about" component={About}/>
       <Route path="/restaurants" component={Restaurants}/>
+      <Route path="/r/:restaurantId" component={Restaurant} />
 
     </div>
   </Router>
